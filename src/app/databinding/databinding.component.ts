@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { PropertyBindingComponent } from './property-binding.component';
+import { EventBindingComponent } from './event-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding.component';
 
 @Component({
   selector: 'fa-databinding',
@@ -11,5 +15,9 @@ export class DatabindingComponent {
 
   onTest() {
   return true;
+  }
+
+  onClicked(value: string) {
+    alert(value);
   }
 }

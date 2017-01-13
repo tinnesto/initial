@@ -7,3 +7,13 @@
 <input type="text" [value]="stringInterpolation"/>
 <p [ngClass] = "{redBorder: onTest()}">Is this styled?</p>
 <p [ngStyle] = "{color: 'blue'}">Is this styled?</p>
+<hr />
+<h3>Custom property binding</h3>
+<fa-property-binding [result] = "10"> </fa-property-binding>
+<hr />
+<h3>Event binding</h3>
+<fa-event-binding (clickable)="onClicked($event)" > </fa-event-binding>
+<hr />
+<h3>Two-way binding</h3>
+<fa-two-way-binding></fa-two-way-binding>
+<br> <br> <br> <br> <br> <br> <br>
